@@ -1,14 +1,15 @@
 name: test_N22R
 channels:
   - pytorch
-  - conda-forge
   - anaconda
+  - conda-forge
   - defaults
 dependencies:
-  - _libgcc_mutex=0.1=main
-  - _openmp_mutex=5.1=1_gnu
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
   - appdirs=1.4.4=pyhd3eb1b0_0
   - basemap=1.2.2=py38ha1e3f77_5
+  - binutils_impl_linux-64=2.40=hf600244_0
   - blas=1.0=mkl
   - brotlipy=0.7.0=py38h27cfd23_1003
   - bzip2=1.0.8=h7b6447c_0
@@ -28,6 +29,8 @@ dependencies:
   - dask-core=2022.7.0=py38h06a4308_0
   - freetype=2.12.1=h4a9f257_0
   - fsspec=2022.11.0=py38h06a4308_0
+  - gcc=13.2.0=h574f8da_2
+  - gcc_impl_linux-64=13.2.0=h338b0a0_2
   - geos=3.10.2=h9c3ff4c_0
   - giflib=5.2.1=h5eee18b_1
   - git-lfs=3.4.0=ha770c72_0
@@ -39,10 +42,11 @@ dependencies:
   - imageio=2.19.3=py38h06a4308_0
   - intel-openmp=2023.1.0=hdb19cb5_46305
   - jpeg=9e=h5eee18b_1
+  - kernel-headers_linux-64=2.6.32=he073ed8_16
   - kiwisolver=1.4.4=py38h6a678d5_0
   - krb5=1.20.1=h143b758_1
   - lcms2=2.12=h3be6417_0
-  - ld_impl_linux-64=2.38=h1181459_1
+  - ld_impl_linux-64=2.40=h41732ed_0
   - lerc=3.0=h295c915_0
   - libblas=3.9.0=1_h86c2bf4_netlib
   - libcblas=3.9.0=5_h92ddd45_netlib
@@ -51,16 +55,18 @@ dependencies:
   - libedit=3.1.20221030=h5eee18b_0
   - libev=4.33=h7f8727e_1
   - libffi=3.4.4=h6a678d5_0
-  - libgcc-ng=11.2.0=h1234567_1
+  - libgcc-devel_linux-64=13.2.0=ha9c7c90_2
+  - libgcc-ng=13.2.0=h807b86a_2
   - libgfortran-ng=11.2.0=h00389a5_1
   - libgfortran5=11.2.0=h1234567_1
-  - libgomp=11.2.0=h1234567_1
+  - libgomp=13.2.0=h807b86a_2
   - liblapack=3.9.0=5_h92ddd45_netlib
   - libnetcdf=4.8.1=h14805e7_4
   - libnghttp2=1.52.0=h2d74bed_1
   - libpng=1.6.37=hbc83047_0
+  - libsanitizer=13.2.0=h7e041cc_2
   - libssh2=1.10.0=hdbd6064_2
-  - libstdcxx-ng=11.2.0=h1234567_1
+  - libstdcxx-ng=13.2.0=h7e041cc_2
   - libtiff=4.5.0=h6a678d5_1
   - libuuid=1.41.5=h5eee18b_0
   - libwebp=1.2.4=h11a3e52_0
@@ -112,6 +118,7 @@ dependencies:
   - six=1.16.0=pyh6c4a22f_0
   - sqlite=3.41.2=h5eee18b_0
   - statsmodels=0.14.0=py38ha9d4c09_0
+  - sysroot_linux-64=2.12=he073ed8_16
   - tbb=2021.8.0=hdb19cb5_0
   - tifffile=2020.10.1=py38hdd07704_2
   - tk=8.6.12=h1ccaba5_0

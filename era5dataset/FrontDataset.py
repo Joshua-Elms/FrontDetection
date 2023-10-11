@@ -72,6 +72,8 @@ class WeatherFrontDataset(Dataset):
         # is the evlauation to be on halfRes
         self.halfRes = halfResEval
 
+        breakpoint()
+
         # Are labels provided? Else do not return labels
         self.has_label = (not label_dir is None and not label_extractor is None)
         if label_extractor is None:

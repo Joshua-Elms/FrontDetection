@@ -72,8 +72,6 @@ class WeatherFrontDataset(Dataset):
         # is the evlauation to be on halfRes
         self.halfRes = halfResEval
 
-        breakpoint()
-
         # Are labels provided? Else do not return labels
         self.has_label = (not label_dir is None and not label_extractor is None)
         if label_extractor is None:
@@ -106,15 +104,17 @@ class WeatherFrontDataset(Dataset):
                     else:
                         self.fileList.append(os.path.join(fold,filen))
         # ERA Data is organized without subfolders (2017 -> 20170101_00.nc)
+        
         else:
+            breakpoint()
             self.fileList = []
-            for filen in os.listdir(self.data_dir):
+            for filen in os.listdir(self.data_dir): # self.data_dir is the path to the folder containing the ERA5 data
                 if(self.has_label):
                     potLabel = datanameToLabelname(filen, self.mapTypes, self.removePrefix)
                     labelExists = False
                     for key, val in potLabel.items():
                         foldna, filena = val.split("/")
-                        if filena in os.listdir(os.path.join(self.label_dir, foldna)):
+                        if filena in os.listdir(os.path.join(self.label_dir, foldna)): # self.label_dir is the path to the folder containing the labels
                             labelExists = True
                     if(labelExists):
                         self.fileList.append(filen)

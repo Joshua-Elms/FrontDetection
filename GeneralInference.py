@@ -673,6 +673,7 @@ if __name__ == "__main__":
     data_set = setupDataset(args)    
     num_worker = 0 if (args.ETH or args.preCalc) else 8
     loader = setupDataLoader(data_set, num_worker)
+    breakpoint()
     
     sample_data = data_set[0]
     data_dims = sample_data[0].shape

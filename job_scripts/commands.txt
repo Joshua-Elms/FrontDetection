@@ -9,4 +9,4 @@ bash Create_Output_Samples_raw.sh \
  Trained_Examples/NWS/data_set_info.txt \
  test0 \
  /N/project/obrienta_startup/datasets/ERA5/ds633.0/e5.oper.an.pl \
- /N/slate/jmelms/N22R_data/NWS/WPC_CODSUS/hires
+ /N/slate/jmelms/N22R_data/NWS/WPC_CODSUS/
